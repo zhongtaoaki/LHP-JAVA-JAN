@@ -41,6 +41,15 @@ public class ArrayDemo {
         
         //打印数组的时候，不能直接打印数组，要去数组的元素
 
+        String[] s = new String[4];
+
+        //二维数组
+        //数组的元素是数组的数组
+        int[][] array3 = {{0,1,2},{0,1}};
+        int[][] array4 = new int[2][];
+        int[][] array5 = new int[2][2];
+        
+        System.out.println(array3[0][2]);
 
     }
 }

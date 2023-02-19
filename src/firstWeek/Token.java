@@ -1,3 +1,4 @@
+package firstWeek;
 /**
  * 运算符
  * 算术运算符
@@ -17,7 +18,7 @@ public class Token {
         //i += 1;
         //i++; // ++i
         
-        i = i++; 
+        i = i+1; 
 
         //System.out.println(i++);
         System.out.println(i);

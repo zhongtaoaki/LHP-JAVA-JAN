@@ -1,3 +1,4 @@
+package firstWeek;
 /**
  * 变量
  * 变量的声明和使用

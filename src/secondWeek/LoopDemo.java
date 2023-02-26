@@ -34,8 +34,8 @@ public class LoopDemo {
         int sum = 0;
 
         // while (index < array.length) { // 数组越界异常
-        //     sum += array[index];
-        //     index++;
+        // sum += array[index];
+        // index++;
         // }
 
         System.out.println(sum);
@@ -48,12 +48,18 @@ public class LoopDemo {
 
         int i = 1;
         // while (i > 10000) {
-        //     System.out.println(i++);
+        // System.out.println(i++);
         // }
 
         do {
             System.out.println(i++);
         } while (i > 10000);
 
+        int[][] array2 = { { 54, 231, 1, 3, 5 }, { 2, 3 }, { 99, 1, 2, 4 } };
+        for (int j = array2.length - 1; j >= 0; j--) {
+            for (int k = array2[j].length - 1; k >= 0; k--) {
+                System.out.println(array2[j][k]);
+            }
+        }
     }
 }

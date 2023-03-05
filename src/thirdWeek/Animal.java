@@ -18,7 +18,7 @@ public class Animal {
     int age;
     boolean gender;
 
-    void bite() {
+    private void bite() {
         System.out.println("动物都会叫");
     }
 
@@ -58,7 +58,6 @@ class Dog extends Animal {
     void watchDoor() {
     }
 
-    @Override
     void bite() {
         System.out.println("汪");
     }

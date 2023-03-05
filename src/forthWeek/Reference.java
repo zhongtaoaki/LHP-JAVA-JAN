@@ -7,8 +7,9 @@ public class Reference {
         int[][] a = {{ 1, 1 },{ 1, 1 }};
         int[][] b = {{ 2, 2 },{ 2, 2 }};
         
-        //a = b;
-
+        for (int i = 0; i < b.length; i++) {
+            a[i] = b[i].clone();
+        }
 
         a[0][0] = 3;
         System.out.println("a: {" + a[0][0] + ", " + a[0][1] + ", " + a[1][0] + ", " + a[1][1] + "}");
@@ -18,5 +19,11 @@ public class Reference {
         // a: {3,2,2,2}
         // b: {2,2,2,2}
         
+        A i = new A(10, "小a");
+        A j = new A(10, "小a");
+        boolean flag = i.equals(j);
+
+        System.out.println(flag);
+
     }
 }

@@ -27,4 +27,15 @@ public class A {
         this.name = name;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        
+        A a = (A)obj;
+        if (this.age == a.age && this.name == a.name) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
 }

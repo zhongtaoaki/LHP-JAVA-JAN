@@ -22,18 +22,18 @@ public class WriteFile {
 
         List<Bean> list = new ArrayList<>();
         list.add(new Bean("沢田さん", 1));
-        list.add(new Bean("郑玥", 1));
+        //list.add(new Bean("郑玥", 1));
         list.add(new Bean("韩昊洋", 1));
         list.add(new Bean("李家煜", 1));
         list.add(new Bean("欧贝佳", 1));
         list.add(new Bean("肖宇希", 1));
-        list.add(new Bean("高浩瀚", 1));
+       // list.add(new Bean("高浩瀚", 1));
         list.add(new Bean("蔡烨妮", 1));
         list.add(new Bean("金莹", 1));
-        list.add(new Bean("李墨含", 1));
+        // list.add(new Bean("李墨含", 1));
         list.add(new Bean("王俞茜", 1));
-        list.add(new Bean("纪开元", 1));
-        list.add(new Bean("張 同心", 1));
+        // list.add(new Bean("纪开元", 1));
+        // list.add(new Bean("張 同心", 1));
 
         outObject.writeObject(list);
         outObject.close();

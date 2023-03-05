@@ -9,7 +9,7 @@ package forthWeek;
  * 
  * 接口 是一种 规范 仕様書　是暴露给系统外部看的
 */
-public class Vehicle implements Speed{
+public class Vehicle extends TransportationTool implements Speed{
 
     String name;
     int seat;
@@ -54,4 +54,10 @@ public class Vehicle implements Speed{
             speed -= valueOfSpeedDown;
         }
     }
+
+    @Override
+    public void stop() {
+        speed = 0;    
+    }
+
 }

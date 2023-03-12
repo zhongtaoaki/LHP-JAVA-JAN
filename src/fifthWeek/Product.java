@@ -6,7 +6,7 @@ package fifthWeek;
  */
 public enum Product {
 
-    APPLE("苹果", 150), MILK("牛奶", 159), COLA("可乐", 121), COFFEE("拿铁", 210);
+    APPLE("苹果", 150), MILK("牛奶", 159), COLA("可乐", 121), COFFEE("拿铁", 210), BREAD("3色パン");
 
     private String type;
     private double price;
@@ -24,11 +24,16 @@ public enum Product {
         this.price = price;
     }
 
+    Product(String type) {
+        this.type = type;
+    }
+
     // 常量：不能变的变量, 必须要在初始化的时候赋值
     // public static final Product APPLE = new Product("苹果", 150);
     // public static final Product MILK = new Product("牛奶", 159);
     // public static final Product COLA = new Product("可乐", 121);
     // public static final Product COFFEE = new Product("拿铁", 210);
+    public static final double PI = 3.1415926;
 
     @Override
     public String toString() {

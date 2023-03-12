@@ -10,9 +10,9 @@ public class Customer {
         this.cash = cash;
     }
 
-    public void buy(Product product) {
-        Random random = new Random();
-        int quantity = random.nextInt(5) + 1; // 生成一个1-5范围的随机整数
+    public void buy(Product product, int quantity) {
+        // Random random = new Random();
+        // int quantity = random.nextInt(5) + 1; // 生成一个1-5范围的随机整数
 
         if (cash >= product.getPrice() * quantity) {
             cash -= product.getPrice() * quantity;

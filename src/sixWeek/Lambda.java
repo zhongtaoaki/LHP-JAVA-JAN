@@ -22,9 +22,9 @@ public class Lambda {
 
         System.out.println("使用普通for循环");
         for (int i = 0; i < list.size(); i++) {
-            if (list.get(i) % 2 == 0) {
-                System.out.println(list.get(i));
-            }
+
+            System.out.println(list.get(i));
+
         }
 
         System.out.println("使用加强for循环（拡張for）");
@@ -48,7 +48,7 @@ public class Lambda {
         // }
         // };
 
-        // Consumer<Integer> variable = t -> System.out.println(t);
+        Consumer<Integer> variable = t -> System.out.println(t);
 
         String message = "偶数是：";
         list.forEach(t -> System.out.println(message + t));
@@ -74,6 +74,10 @@ public class Lambda {
                 .filter(e -> e % 2 == 0)
                 .sorted((o1, o2) -> o1 - o2)
                 .forEach(e -> System.out.println(e));
+
+        list.forEach(System.out::println);
+
+        // 20岁以下（包含20岁）的同学按年龄由大到小排序
     }
 }
 

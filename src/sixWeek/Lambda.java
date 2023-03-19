@@ -48,10 +48,32 @@ public class Lambda {
         // }
         // };
 
-        //lambda表达式 ランムダ式，箭头函数
-        list.forEach(t -> {if (t % 2 == 0)System.out.println(t);});
-        list.forEach(t -> System.out.println(t));
+        // Consumer<Integer> variable = t -> System.out.println(t);
 
+        String message = "偶数是：";
+        list.forEach(t -> System.out.println(message + t));
+
+        // lambda表达式 ランムダ式，箭头函数
+        list.forEach(t -> {
+            if (t % 2 == 0)
+                System.out.println(t);
+        });
+
+        System.out.println("----------------");
+        System.out.println("使用过滤器输出偶数");
+        // 过滤器 保留偶数
+        list.stream().filter(e -> e % 2 == 0).forEach(t -> System.out.println(t));
+
+        System.out.println("----------------");
+        System.out.println("使用sorted排序前");
+        list.forEach(e -> System.err.println(e));
+
+        System.out.println("----------------");
+        System.out.println("使用sorted排序后");
+        list.stream()
+                .filter(e -> e % 2 == 0)
+                .sorted((o1, o2) -> o1 - o2)
+                .forEach(e -> System.out.println(e));
     }
 }
 

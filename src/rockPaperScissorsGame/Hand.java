@@ -25,7 +25,7 @@ public enum Hand {
 	public int fight(Hand h) {
 		if (h.number == this.number) {
 			return 0;
-		} else if ((this.number + 1) % 3 == h.number) {
+		} else if ((this.number + 1) % 3 == h.number) { //循环
 			return 1;
 		} else {
 			return -1;
